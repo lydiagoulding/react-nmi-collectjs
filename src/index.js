@@ -7,6 +7,7 @@ import CheckRoutingNumberInput from "./components/CheckRoutingNumberInput";
 import ValidationContainer, { ValidationContainerFields } from "./components/ValidationContainer";
 import CollectJSProvider from "./contexts/CollectJSProvider";
 import useCollect from "./hooks/useCollect";
+import injectCollectJS from "./injectCollectJS";
 
 export {
     CardCVVInput,
@@ -19,5 +20,6 @@ export {
     ValidationContainerFields,
     CollectJSProvider,
     useCollect,
+    injectCollectJS
 };
 
