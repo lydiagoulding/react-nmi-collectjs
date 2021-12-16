@@ -1,0 +1,16 @@
+{
+  "name": "@lydiagoulding/react-nmi-collectjs",
+  "version": "0.1.0",
+  "description": "A React wrapper around NMI's Collect.js library for collecting payment data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "collect.js",
+    "nmi"
+  ],
+  "author": "Lydia Goulding",
+  "license": "MIT"
+}
