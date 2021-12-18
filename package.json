@@ -17,8 +17,8 @@
     "url": "https://github.com/lydiagoulding/react-nmi-collectjs.git"
   },
   "author": {
-    "name" : "Lydia Goulding",
-    "email" : "lydia.p.goulding+packagejson@gmail.com"
+    "name": "Lydia Goulding",
+    "email": "lydia.p.goulding+packagejson@gmail.com"
   },
   "license": "MIT",
   "devDependencies": {
@@ -27,10 +27,14 @@
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "execa": "^5.1.1",
+    "npm-packlist": "^3.0.0",
     "tar": "^6.1.11"
   },
   "peerDependencies": {
     "react": ">= 16.x",
     "react-dom": ">= 16.x"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

@@ -1,4 +1,5 @@
 const path = require('path');
+const packlist = require('npm-packlist');
 const tar = require('tar');
 const execa = require('execa');
 const packageJson = require('../package.json');
@@ -18,18 +19,13 @@ const babel = (outDir, envName) =>
     );
 
 const createZip = () => {
-    tar.c(
-        {
-            gzip: true,
+    return packlist({ path: projectRoot })
+        .then(files => tar.create({
+            prefix: 'package/',
+            cwd: projectRoot,
             file: `react-nmi-collectjs-v${packageJson.version}.tgz`,
-        },
-        [
-            path.relative(projectRoot, path.join(projectRoot, 'lib')),
-            path.relative(projectRoot, path.join(projectRoot, 'package.json')),
-            path.relative(projectRoot, path.join(projectRoot, 'LICENSE')),
-            path.relative(projectRoot, path.join(projectRoot, 'README.md'))
-        ]
-    )
+            gzip: true
+        }, files))
 }
 
 Promise.resolve(true)
