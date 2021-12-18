@@ -26,6 +26,7 @@ const createZip = () => {
         [
             path.relative(projectRoot, path.join(projectRoot, 'lib')),
             path.relative(projectRoot, path.join(projectRoot, 'package.json')),
+            path.relative(projectRoot, path.join(projectRoot, 'LICENSE')),
             path.relative(projectRoot, path.join(projectRoot, 'README.md'))
         ]
     )
