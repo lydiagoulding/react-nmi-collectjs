@@ -20,6 +20,6 @@ export {
     ValidationContainerFields,
     CollectJSProvider,
     useCollect,
-    injectCollectJS
+    injectCollectJS,
 };
 

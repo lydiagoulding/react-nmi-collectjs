@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import CollectJSContext from "../contexts/CollectJSContext";
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 
 export default function ValidationContainer({children, validationFields}) {
     const { state: {
