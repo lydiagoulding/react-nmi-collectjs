@@ -20,7 +20,6 @@ function reducer(state, action) {
 }
 
 export default function CollectJSProvider({children, collectJSPromise}) {
-    console.log(collectJSPromise);
     const [state, dispatch] = useReducer(reducer, { errors: [] });
     const addError = useCallback((fieldName, message) => {
         dispatch({

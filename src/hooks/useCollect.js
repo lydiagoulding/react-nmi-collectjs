@@ -30,8 +30,8 @@ export default function useCollect(config) {
                 }
             })
         })
-
-    }, [unsetErrors, addError, config, collectJSPromise])
+    // No dependencies - we don't ever want this to run more than once. Calling this more times will cause fields to blink.
+    }, [])
 
     return [collect, paymentToken, reset]
 }
